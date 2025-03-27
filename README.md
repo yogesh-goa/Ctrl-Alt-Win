@@ -81,5 +81,6 @@ image_classifier.h5
 testh5.py
 run : python testh5.py
 
+VIDEO DEMO: https://drive.google.com/drive/folders/1v5BnO44CFwhZx9RjB7Z5SBAqkGqSFe9n?usp=sharing
 CODE FILE: 
 https://drive.google.com/drive/folders/1ud-v_iEgPdvSsPxvzLqdKktnwmaa3SyJ?usp=sharing
