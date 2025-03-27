@@ -80,3 +80,6 @@ create a folder with the following files + test data(images):
 image_classifier.h5
 testh5.py
 run : python testh5.py
+
+CODE FILE: 
+https://drive.google.com/drive/folders/1ud-v_iEgPdvSsPxvzLqdKktnwmaa3SyJ?usp=sharing
