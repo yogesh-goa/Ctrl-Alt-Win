@@ -12,80 +12,59 @@ Adharsh : Front-end, Back-end
 Velino : Front-end, Back-end
 
 Folder structure
-FRONT-END 
-/src  
- ├── components  
- │      ├── Navbar.jsx  
- │      ├── Footer.jsx  
- │      ├── Sidebar.jsx  
- │      ├── EmployerDashboard.jsx  
- │      ├── CandidateDashboard.jsx  
- │      ├── VerificationForm.jsx  
- │      ├── DocumentUpload.jsx  
- │      ├── StatusTracker.jsx  
- │      ├── Feedback.jsx  
- │  
- ├── pages  
- │      ├── EmployerPortal.jsx  
- │      ├── CandidatePortal.jsx  
- │      ├── Login.jsx  
- │      ├── Signup.jsx  
- │      ├── NotFound.jsx  
- │  
- ├── App.js  
- ├── index.js  
- ├── styles.css
 
- AI CLASSIFIER TRAINING/ MODEL TESTING
- /ocr-ai-processing  
- ├── models  
- │      ├── __init__.py  
- │      ├── image_classifier.h5  
- ├── ocr  
- │      ├── ocr_test.py  
- │      ├── processed_data  
- ├── scripts  
- │      ├── checkfeature.py  
- │      ├── document_classifier.py  
- │      ├── evaluate_model.py  
- │      ├── parse_tfrecord.py  
- │      ├── preprocess_images.py  
- │      ├── testh5.py   
- │      ├── train_image_classifier.py  
- │      ├── train_model.py  
- │      ├── __init__.py  
- ├── main.py   
- ├── train_model.py  
+AI-POWERED-BACKGROUND-VERIFICATION
+│── backend  
+│   ├── __pycache__  
+│   ├── main.py  
+│   ├── model.py  
+│── frontend  
+│   ├── node_modules  
+│   ├── public  
+│   ├── src  
+│   │   ├── components  
+│   │   ├── pages  
+│   │   ├── server  
+│   │   ├── App.css  
+│   │   ├── App.js  
+│   │   ├── App.test.js  
+│   │   ├── index.css  
+│   │   ├── index.js  
+│   │   ├── logo.svg  
+│   │   ├── reportWebVitals.js  
+│   │   ├── setupTests.js  
+│── .gitignore  
+│── package-lock.json  
+│── package.json  
+│── tailwind.config.js  
+│── README.md  
 
 
 What is your approach to solve the problem
 
-To solve the AI-Powered Background Verification System problem, I would build a modular system integrating AI-driven document verification, criminal record checks, and employment history validation through APIs. The frontend will be built using React.js and Tailwind CSS, with Node.js and Django managing backend processes. AI models (using TensorFlow and PyTorch) will automate document validation and assess risk based on background data, while real-time notifications will be sent to both employers and candidates. The system will use Checkr and GoodHire APIs for criminal and employment record checks, ensuring fast, accurate, and transparent background screening.
+To solve the AI-Powered Background Verification System problem, I would build a modular system integrating AI-driven document verification, criminal record checks, and employment history validation through APIs. The frontend will be built using React.js and Tailwind CSS, with Node.js and Django managing backend processes. AI models (using TensorFlow and PyTorch) will automate document validation and assess risk based on background data, while real-time notifications will be sent to both employers and candidates. The system will use Legal-BERT APIs for criminal and employment record checks, ensuring fast, accurate, and transparent background screening.
 
 Tech stack for your project
 
 Frontend: React.js, Tailwind CSS
 Backend: Node.js
-AI & Document Verification:Tesseract.js , MicrosoftLayoutMv3,Checkr,TensorFlow
-Database:MongoDB 
-API Integrations:Checkr API
+AI & Document Verification:Tesseract.js , MicrosoftLayoutMv3,Legal-BERT,TensorFlow
+
+API Integrations:Tesseract.js , MicrosoftLayoutMv3, Legal-BERT API
 
 
 Build and run commands
 
-FRONT-END 
-npm start
+terminal 1:
+cd backend
+uvicorn main:app --reload
 
- AI CLASSIFIER TRAINING/ MODEL TESTING
-create a folder with the following files + test data(images):
-image_classifier.h5
-testh5.py
-run : python testh5.py
+terminal 2:
+ cd frontend
+ npm start
 
 VIDEO DEMO: https://drive.google.com/drive/folders/1v5BnO44CFwhZx9RjB7Z5SBAqkGqSFe9n?usp=sharing
-CODE FILE: 
-https://drive.google.com/drive/folders/1ud-v_iEgPdvSsPxvzLqdKktnwmaa3SyJ?usp=sharing
-=======
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
